@@ -7,10 +7,7 @@ import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
-        Main app = new Main();
-        // app is now the gateway.entry_point
-        GatewayServer server = new GatewayServer(app);
-        server.start();
+        new GatewayServer(new Main()).start();
     }
 
     @SuppressWarnings("unused")
